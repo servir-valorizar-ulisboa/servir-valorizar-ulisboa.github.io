@@ -39,3 +39,19 @@ html,body{max-width:100%;overflow-x:clip}img{max-width:100%;height:auto}.topline
 .social-follow a{color:#9dd4b4;font-weight:800;text-decoration:underline;text-underline-offset:3px}
 .social-follow a:hover,.social-follow a:focus-visible{color:#fff}
 @media(max-width:650px){.idea-grid article{min-height:120px;gap:14px}}
+
+/* Destaque da letra U no rodapé, sem alterar o layout */
+.foot-logo .brand-green{color:#9dd4b4}
+
+/* Footer slogan: white text, green emphasis only */
+.footer-top > p { color: #ffffff; }
+.footer-top > p .brand-green { color: #9dd4b4; }
+
+/* Logo experimental no cabecalho e rodape */
+.header .brand-emblem{width:55px;height:55px;object-fit:contain;flex-shrink:0;display:block}.footer-top .brand-emblem{width:64px;height:64px;object-fit:contain;flex-shrink:0;display:block}.header .logo,.footer-top .foot-logo{display:flex;align-items:center;gap:10px}@media(max-width:650px){.header .brand-emblem{width:43px;height:43px}.footer-top .brand-emblem{width:52px;height:52px}}
+
+/* Teste: logótipo no círculo central da capa; rodapé apenas tipográfico */
+.hero .hero-logo-circle{width:230px;height:230px;top:210px;bottom:auto;right:60px;background:#fff;border:0;border-radius:50%;padding:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px rgba(255,255,255,.18);z-index:1}
+.hero .hero-logo-circle img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:1050px) and (min-width:781px){.hero .hero-logo-circle{width:190px;height:190px;right:35px;top:225px;padding:18px}}
+@media(max-width:780px){.hero .hero-logo-circle{position:relative;display:flex;width:180px;height:180px;right:auto;top:auto;bottom:auto;margin:32px auto 0;flex-shrink:0;padding:16px}.hero{flex-wrap:wrap}.hero-copy{width:100%}}
