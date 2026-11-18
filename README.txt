@@ -1,1 +1,3 @@
 LISTA U — protótipo atualizado. Abrir index.html. Antes de publicar: substituir todos os nomes, fotografias e perfis; colocar programa-eleitoral.pdf validado; configurar link do formulário (identificação facultativa, aviso de privacidade e tratamento de dados); confirmar edital, data, horário, local de voto e ligação oficial; acrescentar links de Facebook e Instagram. A ligação para o programa aponta para um ficheiro ainda não incluído, de propósito.
+
+ATUALIZAÇÃO: faixa de notícias animada no topo para a sessão de 20/11 às 15h30. Para mudar a data, hora e ligação, editar o bloco news-ticker no index.html.

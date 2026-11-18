@@ -55,3 +55,19 @@ html,body{max-width:100%;overflow-x:clip}img{max-width:100%;height:auto}.topline
 .hero .hero-logo-circle img{display:block;width:100%;height:100%;object-fit:contain}
 @media(max-width:1050px) and (min-width:781px){.hero .hero-logo-circle{width:190px;height:190px;right:35px;top:225px;padding:18px}}
 @media(max-width:780px){.hero .hero-logo-circle{position:relative;display:flex;width:180px;height:180px;right:auto;top:auto;bottom:auto;margin:32px auto 0;flex-shrink:0;padding:16px}.hero{flex-wrap:wrap}.hero-copy{width:100%}}
+
+/* Barra de notícias: sessões online da Lista U */
+.news-ticker{display:flex;align-items:center;min-height:42px;background:var(--deep);color:var(--toptext);font-family:inherit;position:relative;z-index:20;overflow:hidden}
+.news-ticker-label{flex:none;padding:0 14px;font-size:11px;letter-spacing:.07em;font-weight:800;white-space:nowrap;background:var(--accent);color:#fff;align-self:stretch;display:flex;align-items:center}
+.news-ticker-link{flex:1;min-width:0;overflow:hidden;color:inherit;text-decoration:none;padding:11px 0;white-space:nowrap}
+.news-ticker-track{display:flex;width:max-content;animation:lista-u-ticker 27s linear infinite;font-size:12px;font-weight:700;letter-spacing:.055em}
+.news-ticker-track>span{display:block;flex:none;padding-right:3rem}
+.news-ticker:hover .news-ticker-track,.news-ticker:focus-within .news-ticker-track{animation-play-state:paused}
+.news-ticker-action{flex:none;color:#fff;text-decoration:none;font-size:12px;font-weight:800;white-space:nowrap;padding:12px 16px;background:var(--accent)}
+.news-ticker-action:hover,.news-ticker-action:focus-visible{background:#244c3a}
+@keyframes lista-u-ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:600px){.news-ticker{min-height:38px}.news-ticker-label{padding:0 9px;font-size:9px}.news-ticker-action{padding:11px 9px;font-size:10px}.news-ticker-track{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.news-ticker-track{animation:none}.news-ticker-link{overflow-x:auto}}
+
+/* Separador visual entre o destaque e o cabecalho institucional */
+.news-ticker{border-bottom:3px solid #e9eee9;}
